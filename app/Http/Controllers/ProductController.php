@@ -33,7 +33,7 @@ class ProductController extends Controller
         // Crear el producto en la base de datos
         Product::create($request->all());
         return redirect()->route('products.index')
-        ->with('success', 'Producto Creado.');
+            ->with('success', 'Producto Creado.');
     }
 
     // Mostrar un producto específico
@@ -61,7 +61,7 @@ class ProductController extends Controller
         // Actualizar el producto en la base de datos
         $product->update($request->all());
         return redirect()->route('products.index')
-        ->with('success', 'Producto Actualizado.');
+            ->with('success', 'Producto Actualizado.');
     }
 
     // Eliminar un producto existente
@@ -69,6 +69,6 @@ class ProductController extends Controller
     {
         $product->delete();
         return redirect()->route('products.index')
-        ->with('success', 'Producto Eliminado.');
+            ->with('success', 'Producto Eliminado.');
     }
 }
