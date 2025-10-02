@@ -6,6 +6,7 @@
     <title>Laravel CRUD</title>
 </head>
 <body>
+    <a href={{ route('products.create') }}>Crear Nuevo Producto</a>
     <h1>Listado de productos</h1>
     <table border="1">
         <tr>
